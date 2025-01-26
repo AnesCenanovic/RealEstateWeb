@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.glavnaVijest {
+    flex: 1;
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 10px;
+    aspect-ratio: 2 / 1;
+
+    @media (max-width: 800px) {
+        aspect-ratio: 1 / 1;
+      }
+}
+
+.news-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.grid-container {
+    width: 25%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (max-width: 800px) {
+        width: 50%;
+      }
+}
+
+.visokaVijest, .kvadratnaVijest {
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.visokaVijest {
+    width: 25%;
+    aspect-ratio: 1 / 2;
+    background-color: lightyellow;
+    @media (max-width: 800px) {
+        width: 50%;
+      }
+}
+
+.kvadratnaVijest {
+    aspect-ratio: 1 / 1;
+    background-color: lightpink;
+    @media (max-width: 800px) {
+        height: 100%;
+      }
+}
