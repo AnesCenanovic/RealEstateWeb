@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistika</title>
+  <link rel="stylesheet" href="../css/statistika.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <iframe src="meni.html"></iframe>
+
+  <h1>Statistika nekretnina</h1>
+
+  <div id="input">
+
+    <div>
+        <label for="kvadratura-kriterij">Kriterij za prosječnu kvadraturu:</label>
+        <textarea id="kvadratura-kriterij" placeholder="Format unosa : {&quot;tip_nekretnine&quot;:&quot;Stan&quot;}"></textarea>
+    </div>
+
+    <button onclick="prosjecnaKvadratura()">Calculate</button>
+
+    <div id="rezultat-kvadratura">
+
+    </div>
+
+    <div>
+        <label for="outlier-kriterij">Outlier kriterij:</label>
+        <textarea id="outlier-kriterij" placeholder="Format unosa: {&quot;tip_nekretnine&quot;:&quot;Stan&quot;}"></textarea>
+        <label for="naziv-svojstva">Svojstvo:</label>
+        <input id="naziv-svojstva" placeholder="Primjer: cijena">
+    </div>
+
+    <button onclick="prikaziOutlier()">Calculate</button>
+
+    <div id="rezultat-outlier">
+
+    </div>
+
+    <div>
+        <label for="korisnik-id">ID korisnika za analizu nekretnina:</label>
+        <input id="korisnik-id" type="number" placeholder="ID">
+    </div>
+
+    <button onclick="mojeNekretnine()">Calculate</button>
+
+    <div id="rezultat-nekretnine">
+
+    </div>
+
+  <div id="controls">
+  <div>
+    <label for="periodi">Periodi:</label>
+    <textarea id="periodi" placeholder="Format unosa: [{&quot;od&quot;:2000, &quot;do&quot;:2010}, {&quot;od&quot;:2010, &quot;do&quot;2024}]"></textarea>
+  </div>
+  <div>
+    <label for="rasponi">Rasponi cijena:</label>
+    <textarea id="rasponi" placeholder="Format unosa: [{&quot;od&quot;:10000, &quot;do&quot;:150000}, {&quot;od&quot;:150000, &quot;do&quot;:1000000}]"></textarea>
+  </div>
+    <button onclick="iscrtajHistogram()">Calculate</button>
+
+    <div id="rezultat-histogram">
+
+    </div>
+
+  </div>
+</div>
+
+  <section class="histogram">
+    <h2>Histogram Cijena</h2>
+    <canvas id="mojChart"></canvas>
+  </section>
+  </div>
+
+  
+  <div id="chartContainer">
+    
+  </div>
+
+  <script src="../Scripts/StaticNekretnine.js"></script>
+  <script src="../Scripts/SpisakNekretnina.js"></script>
+  <script src="../Scripts/StatistikaNekretnina.js"></script>
+  <script src="../Scripts/statistika.js"></script>
+
+</body>
+</html>

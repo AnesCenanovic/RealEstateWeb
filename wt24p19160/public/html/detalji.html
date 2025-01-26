@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bs-BA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalji</title>
+    <link rel="stylesheet" type="text/css" href="../css/detalji.css">
+</head>
+
+<body>
+    <iframe src="meni.html"></iframe>
+
+    <div id="osnovno">
+        <img id="nekretnina-image" src="" alt="Nekretnina">
+        <p><strong>Naziv:</strong> <span id="naziv"></span></p>
+        <p><strong>Kvadratura:</strong> <span id="kvadratura"></span></p>
+        <p><strong>Cijena:</strong> <span id="cijena"></span></p>
+    </div>
+
+    <h3>DETALJI</h3>
+    <div id="detalji">
+        <div id="kolona1">
+            <p><strong>Tip grijanja:</strong> <span id="tip-grijanja"></span></p>
+            <p><strong>Lokacija:</strong> <span id="lokacija"></span></p>
+        </div>
+        <div id="kolona2">
+            <p><strong>Godina izgradnje:</strong> <span id="godina-izgradnje"></span></p>
+            <p><strong>Datum objave oglasa:</strong> <span id="datum-objave"></span></p>
+        </div>
+        <div id="opis">
+            <p><strong>Opis:</strong> <span id="opis-text"></span></p>
+        </div>
+    </div>
+
+        <h3>DODAJ INTERESOVANJE</h3>
+    <form id="interesovanje-form">
+        <label for="tip-interesovanja">Tip interesovanja:</label>
+        <select id="tip-interesovanja" name="tip">
+            <option value="upit">Upit</option>
+            <option value="zahtjev">Zahtjev</option>
+            <option value="ponuda">Ponuda</option>
+        </select>
+        <div id="interesovanje-fields">
+            <!-- js generated -->
+        </div>
+        <button type="submit">Pošalji</button>
+    </form>
+
+    <h3>INTERESOVANJA</h3>
+    <div id="interesovanja-container">
+        <!-- js generated -->
+    </div>
+
+    <div class="navigacija">
+        <button class="prev-btn">Prethodni</button>
+        <button class="next-btn">Sljedeći</button>
+    </div>
+
+    
+    <script src="../Scripts/PoziviAjax.js"></script>
+    <script src="../Scripts/detalji.js"></script>
+</body>
+
+</html>

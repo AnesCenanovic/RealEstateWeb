@@ -1,0 +1,22 @@
+Zadatak 1:
+
+- U izvornom kodu je dobro definisana lista sa horizontalnim displejom. Bilo bi dobro da su margine liste ili linkovi 
+ imali bolje definisane granice jer animiranje i skaliranje ikonice se moralo raditi nekako odokativno.
+
+Zadatak 2:
+- Imam samo dva Resource subfoldera zbog lakšeg snalaženja i ponovnog korištenja slika.
+
+Zadatak 3:
+
+- Bilo bi lakše sakriti drugi upit ukoliko bi on uvijek bio označen drugacijim id-om ili drugacijim div-om. 
+- Dodavanje dugmadi za navigaciju bi bilo lakše da su postojala u početnom html-u, a da su bila sakrivena na ekranima većim od 600px.
+
+Zadatak 4:
+
+- Dvoumica između organizovanja container klasa. U zavisnosti od izbora, čini organizaciju na manjim ekranima lakšom/težom.
+- Korištenje ugnježdenih container klasa pomaže kod pravljenja specifičnih layout-a.
+- Ne razumijem zašto nije omogućeno grupisanje barem kvadratnih vijesti u poseban div. Ukoliko pratimo ograničenje da 
+  se ne smiju koristiti među-kontejneri, onda je postizanje istog izgleda na obje veličine ekrana nemoguće bez 
+  hardkodiranja. Redoslijed vijesti koje moramo redati slijeva na desno znači da nije moguće održati isti redoslijed vijesti 
+  na obje velicine ekrana. Imao sam rješenje koje je koristilo među-kontejnere i radilo pravilno 
+  na obje velicine ekrana. 
